@@ -1,8 +1,8 @@
-#pull the httpd docker images from docker hub
+# pull the httpd base docker image
 FROM httpd:latest
 
-#person who is maintaining the docker file
+# person who is maintinaing it 
 MAINTAINER "poojagoudainamati@gmail.com"
 
-#copying the html application files from the source to httpd container location
-COPY ./templatemo_562_space_dynamic/ /usr/local/apache2/htdocs/
+# copy the our templatemo_562_space_dynamic application file from source to destination httpd conatiner location 
+COPY  ./templatemo_562_space_dynamic/ /usr/local/apache2/htdocs/
